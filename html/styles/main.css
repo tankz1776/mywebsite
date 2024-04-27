@@ -1,0 +1,51 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 10px;
+	padding: 10px;
+	background-color: #f7f7f7; /* Lighter background color */
+	background-image: linear-gradient(to bottom, #f7f7f7, #fff); /* Added a subtle gradient effect */
+}
+
+header {
+	background-color: #03A9F4; /* Brighter header background with a blue undertone */
+	color: #fff;
+	padding: 5px;
+	text-align: center;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* Increased shadow depth and opacity */
+	border-bottom: 0px solid #0277BD; /* Added a border to define the header section */
+}
+
+h1, h2 {
+	color: #0277BD; /* Changed text color to a brighter blue for contrast */
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Reduced text shadow to make text appear sharper */
+}
+
+section {
+	background-color: #fff; /* Lighter section background */
+	padding: 30px;
+	margin-bottom: 30px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* Increased shadow depth and opacity */
+	border-radius: 5px; /* Added a subtle border radius for a more modern look */
+}
+
+.experience-entry {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #0277BD; /* Brighter border color */
+	position: relative; /* Added relative positioning for the :before pseudo-element */
+}
+
+.experience-entry:before {
+	content: "";
+	position: absolute;
+	left: 0; /* Increased the left position to create some space */
+	top: 0;
+	width: 1px;
+	height: 100%;
+	background-color: #0277BD; /* Brighter border color */
+	border-radius: 5px 0 0 5px; /* Added a subtle border radius for a more modern look */
+}
+
+.experience-entry:last-child {
+	border-bottom: none;
+}

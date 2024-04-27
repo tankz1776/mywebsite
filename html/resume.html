@@ -1,16 +1,29 @@
  <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Daniel J Brown - Business Insights Analyst</title>
-	<link rel="stylesheet" href="styles/main.css">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Daniel J Brown - Business Insights Analyst</title>
+		<link rel="stylesheet" href="styles/main.css">
+		<script>
+		function handleEmailClick() {
+   			 var email = "mailto:danieljames1776@icloud.com"; // Optional fields:
+   			 email += "?subject=Feedback";  // Pre-filled subject line 
+   			 email += "&body=Hello,%20";   // Pre-filled message body (URL encoded)
+
+   			 location.href = email;
+		}
+		function handleLinkedInClick() {
+			var linkedin = "(link unavailable)";
+			ocation.href = linkedin;
+		}
+		</script>
+	</head>
 <body>
 	<header>
 		<h1>Daniel J Brown</h1>
 		<h2>Business Insights Analyst</h2>
-		<p>101 Ridge St., Shavertown, PA 18708 | 607.240.3595 | <a href="mailto:danieljames1776@icloud.com">danieljames1776@icloud.com</a></p>
+		<p>101 Ridge St., Shavertown, PA 18708 | 607.240.3595 | <a href="danieljames1776@icloud.com" onclick="handleEmailClick()">danieljames1776@icloud.com</a> | <a href="https://www.linkedin.com/in/daniel-brown-b9b2721bb/" onclick="handleLinkedInClick()">LinkedIn</a></p>
 	</header>
 	<section id="summary">
 		<h2>Summary</h2>

@@ -1,15 +1,18 @@
- body {
+body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: #f0f0f0;
+	background-color: #f7f7f7; /* Lighter background color */
+	background-image: linear-gradient(to bottom, #f7f7f7, #fff); /* Added a subtle gradient effect */
 }
 
 header {
-	background-color: #333;
+	background-color: #03A9F4; /* Brighter header background with a blue undertone */
 	color: #fff;
 	padding: 20px;
 	text-align: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Increased shadow depth and opacity */
+	border-bottom: 2px solid #0277BD; /* Thicker border to define the header section */
 }
 
 #buttons {
@@ -18,14 +21,66 @@ header {
 }
 
 button {
-	background-color: #333;
+	background-color: #03A9F4; /* Brighter button background with a blue undertone */
 	color: #fff;
-	padding: 10px 20px;
+	padding: 20px 40px; /* Increased padding for bigger buttons */
 	border: none;
-	border-radius: 5px;
+	border-radius: 10px; /* Increased border radius for a more modern look */
 	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Added a subtle shadow effect */
 }
 
 button:hover {
-	background-color: #444;
+	background-color: #0277BD; /* Brighter hover color */
+}
+
+section {
+	background-color: #fff; /* Lighter section background */
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Increased shadow depth and opacity */
+	border-radius: 10px; /* Added a subtle border radius for a more modern look */
+}
+
+.experience-entry {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #0277BD; /* Thicker border to define the experience entry */
+	position: relative; /* Added relative positioning for the :before pseudo-element */
+	padding-left: 20px; /* Increased padding to make space for the pseudo-element */
+}
+
+.experience-entry:before {
+	content: "";
+	position: absolute;
+	left: 20px; /* Increased the left position to create some space */
+	top: 0;
+	width: 10px; /* Increased width for a thicker pseudo-element */
+	height: 100%;
+	background-color: #0277BD; /* Brighter border color */
+	border-radius: 10px 0 0 10px; /* Added a subtle border radius for a more modern look */
+}
+
+.experience-entry:last-child {
+	border-bottom: none;
+}
+
+/* Added some modern effects */
+
+header, section, .experience-entry {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+button, .experience-entry:before {
+	transition: all 0.3s ease-in-out;
+}
+
+button:hover, .experience-entry:hover:before {
+	transform: scale(1.1);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+button:focus {
+	outline: none;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
