@@ -1,55 +1,32 @@
- /* General Styles */
-body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* A clean font */
-  margin: 0 auto; /* Center content horizontally */
-  max-width: 800px; /* Limit width for readability */
-  padding: 20px; 
-  background-color: #f8f8f8; /* Subtle background color */
-  color: #333; /* Dark text for contrast */
+ body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f0f0f0;
 }
 
 header {
-  text-align: center;
-  background-color: #0066cc; /* Eye-catching header color */
-  color: white;
-  padding: 20px 0;
-  margin-bottom: 20px;
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
 }
 
-/* Emphasize Name in Header */
-header h1 { 
-  font-size: 2.5em; /* Larger font-size for the name */
-  margin-bottom: 5px;  
+h1, h2 {
+	color: #333;
 }
 
-/* Section Styles */
 section {
-  margin-bottom: 30px;
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
-  color: #0066cc; /* Match header color */
-  border-bottom: 2px solid #0066cc;
+.experience-entry {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
 }
 
-/* Skills Styling */
-#skills ul {
-  list-style-type: disc; /* Add bullet points */
-  margin-left: 30px; 
-}
-
-/* Styling for Job Entries */
-.job h3 {
-  margin-bottom: 5px;
-}
-
-.job span {
-  float: right; /* Place dates on the right */
-}
-
-/* Footer Styles */
-footer {
-  text-align: center;
-  padding: 10px;
-  border-top: 2px solid #ddd; /* Subtle top border */
-}
+.experience-entry:last
